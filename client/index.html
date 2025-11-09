@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Canvas</title>
+  <link rel="stylesheet" href="/client/style.css">
+</head>
+
+
+<body>
+  <header>
+    <h1>Collaborative Canvas</h1>
+    <div class="toolbar">
+      <label>
+        Tool:
+        <select id="tool">
+          <option value="brush">Brushe</option>
+          <option value="eraser">Eraser</option>
+        </select>
+      </label>
+
+      <label>
+        Colour:
+        <input type="color" id="color" value="#1f6feb">
+      </label>
+
+      <label>
+        Size:
+        <input type="range" id="size" min="1" max="40" value="6">
+      </label>
+
+      <button id="undo" disabled>Undo</button>
+      <button id="redo" disabled>Redo</button>
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <h3>Online</h3>
+      <ul id="users">
+      </ul>
+    </aside>
+
+    <section class="stage">
+      <canvas id="canvas"></canvas>
+    </section>
+  </main>
+
+  <script type="module" src="/client/main.js"></script>
+</body>
+</html>

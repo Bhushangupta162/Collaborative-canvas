@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: system-ui, "Segoe UI", Roboto, Arial, sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e6e6e6;
+  background: #0765df;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar label {
+  font-size: 14px;
+}
+main {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  height: calc(100% - 60px);
+}
+
+.sidebar {
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  overflow-y: auto;
+  background: #16d6ad;
+}
+
+.stage {
+  background: #fafafa;
+  position: relative;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: crosshair;
+}
+
+#users {
+  margin: 0;
+  padding-left: 8px;
+  list-style: none;
+}
+
+#users li {
+  padding: 4px 0;
+  font-size: 14px;
+  color: #333;
+}
