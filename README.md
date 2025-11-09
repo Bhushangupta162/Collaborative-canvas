@@ -1,42 +1,25 @@
-🎨 Collaborative Canvas
+# 🎨 Collaborative Canvas
 
-A small real-time drawing web app built using HTML5 Canvas, Node.js, and WebSockets.
-Multiple users can draw together on the same shared canvas with smooth brush and eraser tools.
+A simple real-time drawing web app built with **HTML5 Canvas** and **Node.js (WebSockets)**.  
+It lets multiple users draw together live in the same shared space.
 
-🚀 Features
+---
 
-Brush & eraser with adjustable size and color
+## ✨ Features
+- Brush and eraser tools  
+- Adjustable color and stroke size  
+- Real-time sync between users  
+- Clean, responsive layout
 
-Real-time drawing sync between connected users
+---
 
-Simple Node.js + WebSocket backend
+## 🛠 Tech Stack
+**Frontend:** HTML, CSS, Vanilla JavaScript  
+**Backend:** Node.js, Express, WebSocket (`ws`)
 
-Responsive layout that works in browser tabs
+---
 
-🛠️ Tech Stack
-
-Frontend: Vanilla JavaScript, HTML5 Canvas, CSS
-Backend: Node.js, Express, WebSocket (ws library)
-
-▶️ How to Run
-
-Clone the repository
-
-Install dependencies
-
-npm install
-
-
-Start the server
-
-npm start
-
-
-Open your browser and go to
-👉 http://localhost:8080
-
-(open in two tabs to see real-time sync)
-
-📘 Notes
-
-This project was developed as part of a learning exercise to understand canvas rendering and real-time communication using WebSockets.
+## ▶️ Run Locally
+1. Install dependencies  
+   ```bash
+   npm install
